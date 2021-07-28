@@ -37,6 +37,7 @@ void hTask_Init(task_stack_t *stack,void (*entery)(void *param),void *param,hTas
 	*(--task_env) = (hTask_data_type )0x04;//R4
 
 	stack->stack = task_env;
+	
 }
 
 /***********************************task 1************************************************/
@@ -45,13 +46,13 @@ hTask_data_type hTask1_Env[1024];
 uint8_t task1_flag = 0;
 void task1Entery (void *param)
 {
+	systemTick_Init(10);
 	for(;;)
 	{
 		task1_flag = 0;
 		delay(1000);
 		task1_flag = 1;
 		delay(1000);
-		hTaskYield();
 	}
 }
 /***********************************task 2************************************************/
@@ -66,7 +67,6 @@ void task2Entery (void *param)
 		delay(1000);
 		task2_flag = 1;
 		delay(1000);
-		hTaskYield();
 	}
 }
 

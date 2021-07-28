@@ -21,5 +21,5 @@ extern task_stack_t *task_table[2];
 void hTaskStart(void);
 
 void hTaskYield(void);
-
+void systemTick_Init(uint32_t ms);
 #endif
