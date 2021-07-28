@@ -1,0 +1,3 @@
+--create .\Objects\HappyOS.lib
+.\objects\main.o
+.\objects\irq.o

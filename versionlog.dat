@@ -1,0 +1,17 @@
+﻿*********************************************************************************************************
+* This file records the gsop history version log                                                        *
+* Vx.xx.000 is official released version used for all kinds of milestones.                              *
+* Vx.xx.xxx is debug released version used for development stage.                                       *
+* CURRENT_VERSION is the latest version, when we submit the source code, we should update this version  *
+																										*
+*********************************************************************************************************
+CURRENT_VERSION=V00.00.00.01
+
+History log:
+Version: V00.00.00.01
+Time   : 2021/07/28
+BugId  : 
+Author : chenwei
+Description:
+1、happyOS初版，实现2个任务切换。
+--------------------------------------------------------------------------------------------------
